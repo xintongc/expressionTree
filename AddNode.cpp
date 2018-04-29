@@ -11,6 +11,10 @@ AddNode::AddNode(ComponentNode *l, ComponentNode *r) {
     right = r;
 }
 
+AddNode::~AddNode() {
+    delete left;
+    delete right;
+}
 
 int AddNode::calculate() {
     return left->calculate() + right->calculate();

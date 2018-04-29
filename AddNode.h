@@ -12,10 +12,10 @@ class AddNode : public ComponentNode {
 
 public:
     AddNode(ComponentNode *l, ComponentNode *r);
+    ~AddNode();
     int calculate();
 
 protected:
-    char c = '+';
     ComponentNode *left;
     ComponentNode *right;
 

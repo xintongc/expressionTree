@@ -10,6 +10,7 @@
 class ComponentNode  {
 public:
     virtual int calculate() = 0;
+    ~ComponentNode(){};
 };
 
 

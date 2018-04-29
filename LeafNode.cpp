@@ -8,6 +8,9 @@ LeafNode::LeafNode(int n) {
     number = n;
 }
 
+LeafNode::~LeafNode() {
+}
+
 int LeafNode::calculate() {
     return number;
 }

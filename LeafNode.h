@@ -13,6 +13,7 @@ protected:
     int number;
 public:
     LeafNode(int n);
+    ~LeafNode();
     int calculate();
 
 };
