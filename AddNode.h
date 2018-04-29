@@ -12,8 +12,8 @@ class AddNode : public ComponentNode {
 
 public:
     AddNode(ComponentNode *l, ComponentNode *r);
-    ~AddNode();
-    int calculate();
+    virtual ~AddNode();
+    double calculate();
 
 protected:
     ComponentNode *left;

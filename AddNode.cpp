@@ -16,6 +16,6 @@ AddNode::~AddNode() {
     delete right;
 }
 
-int AddNode::calculate() {
+double AddNode::calculate() {
     return left->calculate() + right->calculate();
 }

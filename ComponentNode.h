@@ -9,8 +9,8 @@
 
 class ComponentNode  {
 public:
-    virtual int calculate() = 0;
-    ~ComponentNode(){};
+    virtual double calculate() = 0;
+    virtual ~ComponentNode(){};
 };
 
 

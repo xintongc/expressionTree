@@ -11,6 +11,6 @@ LeafNode::LeafNode(int n) {
 LeafNode::~LeafNode() {
 }
 
-int LeafNode::calculate() {
+double LeafNode::calculate() {
     return number;
 }

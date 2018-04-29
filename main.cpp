@@ -2,20 +2,23 @@
 #include "ComponentNode.h"
 #include "AddNode.h"
 #include "LeafNode.h"
+#include "NegateNode.h"
+#include "MultiplyNode.h"
 
 
 using namespace std;
 
 int main() {
 
-    ComponentNode *leaf1 = new LeafNode(1);
-    ComponentNode *leaf2 = new LeafNode(2);
+    ComponentNode *leaf5 = new LeafNode(5);
+    ComponentNode *leaf4 = new LeafNode(4);
     ComponentNode *leaf3 = new LeafNode(3);
 
-    ComponentNode *componentNode2 = new AddNode(leaf1,leaf2);
-    ComponentNode *componentNode1 = new AddNode(componentNode2,leaf3);
+    ComponentNode *add = new AddNode(leaf3,leaf4);
+    ComponentNode *negate = new NegateNode(leaf5);
+    ComponentNode *Mul = new MultiplyNode(add,negate);
 
-    int result = componentNode1->calculate();
+    int result = Mul->calculate();
     cout << result;
 
     return 0;

@@ -6,8 +6,19 @@
 #define EXPRESSIONTREE_NEGATENODE_H
 
 
-class NegateNode {
+#include "ComponentNode.h"
 
+class NegateNode : public ComponentNode {
+public:
+    NegateNode();
+
+    virtual ~NegateNode();
+
+    NegateNode(ComponentNode *c);
+    double calculate();
+
+protected:
+    ComponentNode *child;
 
 };
 
