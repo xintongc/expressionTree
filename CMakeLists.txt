@@ -14,6 +14,6 @@ set(SOURCE_FILES
         main.cpp
         NegateNode.cpp
         NegateNode.h
-        MultiplyNode.cpp MultiplyNode.h)
+        MultiplyNode.cpp MultiplyNode.h DivideNode.cpp DivideNode.h)
 
 add_executable(expressionTree ${SOURCE_FILES})
