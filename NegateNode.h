@@ -7,18 +7,17 @@
 
 
 #include "ComponentNode.h"
+#include "UnaryNode.h"
 
-class NegateNode : public ComponentNode {
+class NegateNode : public UnaryNode {
 public:
-    NegateNode();
+    NegateNode(ComponentNode *right);
 
     virtual ~NegateNode();
 
-    NegateNode(ComponentNode *c);
     double calculate();
 
-protected:
-    ComponentNode *child;
+
 
 };
 

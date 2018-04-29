@@ -6,10 +6,7 @@
 #include <iostream>
 using namespace std;
 
-AddNode::AddNode(ComponentNode *l, ComponentNode *r) {
-    left = l;
-    right = r;
-}
+
 
 AddNode::~AddNode() {
     delete left;
@@ -19,3 +16,5 @@ AddNode::~AddNode() {
 double AddNode::calculate() {
     return left->calculate() + right->calculate();
 }
+
+AddNode::AddNode(ComponentNode *right, ComponentNode *left) : BinaryNode(right, left) {}

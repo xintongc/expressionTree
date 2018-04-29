@@ -7,17 +7,15 @@
 
 
 #include "ComponentNode.h"
+#include "BinaryNode.h"
 
-class DivideNode : public ComponentNode {
+class DivideNode : public BinaryNode {
 public:
-    DivideNode();
-    DivideNode(ComponentNode *l, ComponentNode *r);
+    DivideNode(ComponentNode *left, ComponentNode *right);
+
     double calculate();
     virtual ~DivideNode();
 
-protected:
-    ComponentNode *left;
-    ComponentNode *right;
 };
 
 

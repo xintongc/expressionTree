@@ -7,17 +7,16 @@
 
 
 #include "ComponentNode.h"
+#include "BinaryNode.h"
 
-class AddNode : public ComponentNode {
+class AddNode : public BinaryNode {
 
 public:
-    AddNode(ComponentNode *l, ComponentNode *r);
     virtual ~AddNode();
     double calculate();
 
-protected:
-    ComponentNode *left;
-    ComponentNode *right;
+    AddNode(ComponentNode *right, ComponentNode *left);
+
 
 };
 

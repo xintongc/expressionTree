@@ -7,17 +7,15 @@
 
 
 #include "ComponentNode.h"
+#include "BinaryNode.h"
 
-class MultiplyNode : public ComponentNode {
+class MultiplyNode : public BinaryNode {
 public:
-    MultiplyNode();
     virtual ~MultiplyNode();
-    MultiplyNode(ComponentNode *l, ComponentNode *r);
     double calculate();
 
-protected:
-    ComponentNode *left;
-    ComponentNode *right;
+    MultiplyNode(ComponentNode *right, ComponentNode *left);
+
 
 };
 

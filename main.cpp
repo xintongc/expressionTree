@@ -22,7 +22,10 @@ int main() {
     double result = mul->calculate();
     cout << result << endl;
 
-    ComponentNode * div = new DivideNode(negate,add);
+    ComponentNode *leaf1 = new LeafNode(1);
+    ComponentNode *leaf2 = new LeafNode(2);
+ //   ComponentNode * div = new DivideNode(negate,add);
+    ComponentNode * div = new DivideNode(leaf2,leaf1);
     double result2 = div->calculate();
     cout << result2;
 

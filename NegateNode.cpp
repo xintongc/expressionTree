@@ -4,16 +4,16 @@
 
 #include "NegateNode.h"
 
-NegateNode::NegateNode() {}
+
 
 NegateNode::~NegateNode() {
-    delete child;
+    delete right;
 }
 
-NegateNode::NegateNode(ComponentNode *c){
-    child = c;
-}
+
 
 double NegateNode::calculate(){
-    return child->calculate() * -1;
+    return right->calculate() * -1;
 }
+
+NegateNode::NegateNode(ComponentNode *right) : UnaryNode(right) {}

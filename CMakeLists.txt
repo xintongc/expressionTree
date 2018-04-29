@@ -7,13 +7,12 @@ set(SOURCE_FILES
         AddNode.cpp
         AddNode.h
         CMakeLists.txt
-        ComponentNode.cpp
         ComponentNode.h
         LeafNode.cpp
         LeafNode.h
         main.cpp
         NegateNode.cpp
         NegateNode.h
-        MultiplyNode.cpp MultiplyNode.h DivideNode.cpp DivideNode.h)
+        MultiplyNode.cpp MultiplyNode.h DivideNode.cpp DivideNode.h UnaryNode.cpp UnaryNode.h BinaryNode.cpp BinaryNode.h)
 
 add_executable(expressionTree ${SOURCE_FILES})
