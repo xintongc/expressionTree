@@ -17,14 +17,22 @@ int main() {
 
     ComponentNode *add = new AddNode(leaf3,leaf4);
     ComponentNode *negate = new NegateNode(leaf5);
-    ComponentNode *Mul = new MultiplyNode(negate,add);
+    ComponentNode *mul = new MultiplyNode(negate,add);
 
-    double result = Mul->calculate();
+    double result = mul->calculate();
     cout << result << endl;
 
     ComponentNode * div = new DivideNode(negate,add);
     double result2 = div->calculate();
     cout << result2;
+
+    delete leaf5;
+    delete leaf4;
+    delete leaf3;
+    delete add;
+    delete negate;
+    delete mul;
+    delete div;
 
     return 0;
 }
