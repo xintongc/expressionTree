@@ -9,8 +9,7 @@ using namespace std;
 
 
 AddNode::~AddNode() {
-    delete left;
-    delete right;
+
 }
 
 double AddNode::calculate() {
